@@ -1,0 +1,8 @@
+<h2>{{@title}}</h2>
+
+<div class="card-columns">
+
+  {{#each @list as |movie|}}
+      <MovieCard @title="{{movie.title}}" />
+  {{/each}}
+</div>
