@@ -3,6 +3,10 @@
 <div class="card-columns">
 
   {{#each @list as |movie|}}
-      <MovieCard @title="{{movie.title}}" />
+    <MovieCard
+      @title="{{movie.title}}"
+      @parental="{{movie.parental_rating}}"
+      @id="{{movie.id}}"
+    />
   {{/each}}
 </div>
