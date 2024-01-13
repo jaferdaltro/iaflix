@@ -20,8 +20,6 @@ export default class MovieDataService extends Service {
           plot: movie.plot,
           rating: movie.rating,
         });
-      } else {
-        return existingMovie;
       }
     };
     return data.map(addMovieStore);
