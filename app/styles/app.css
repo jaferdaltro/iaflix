@@ -29,3 +29,12 @@ ul.no-bullets {
 .card {
   height: 300px;
 }
+
+.mb-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-columns .card {
+  margin-bottom: 1.75rem;
+}
