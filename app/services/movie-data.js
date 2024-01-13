@@ -11,6 +11,7 @@ export default class MovieDataService extends Service {
       let existingMovie = this.store.peekRecord('movie', movie.id);
       if (!existingMovie) {
         return this.store.createRecord('movie', {
+          id: movie.id,
           title: movie.title,
           release_date: movie.release_date,
           runtime: movie.runtime,
