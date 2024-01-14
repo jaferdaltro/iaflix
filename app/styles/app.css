@@ -1,26 +1,4 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
-ul.no-bullets {
-  list-style: none;
-}
-
-.horizontal-list {
-  display: block;
-  justify-content: space-between;
-}
-
-.horizontal-scroll {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.element-scrolled {
-  display: inline-block;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  outline: black;
-}
-
 .card-columns {
   column-count: 6;
 }
