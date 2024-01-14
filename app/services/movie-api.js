@@ -8,7 +8,7 @@ export default class MovieApiService extends Service {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(movieData),
+        body: JSON.stringify({ movie: movieData }),
       });
 
       if (!response.ok) {
