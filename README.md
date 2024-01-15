@@ -1,56 +1,64 @@
-# iaflix
+# IAFlix
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Welcome to IAFlix, the Ember Movie App! This application allows users to browse for movies using an Ember.js frontend.
 
-## Prerequisites
+## Getting Started
 
-You will need the following things properly installed on your computer.
+### Prerequisites
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
+Before you begin, make sure you have the following installed:
 
-## Installation
+- [Node.js](https://nodejs.org/)
+- [npm (Node Package Manager)](https://www.npmjs.com/get-npm)
+- [Ember CLI](https://ember-cli.com/)
 
-* `git clone <repository-url>` this repository
-* `cd iaflix`
-* `npm install`
+### Installation
 
-## Running / Development
+1. Clone the repository:
 
-* `npm run start`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+    ```bash
+    git clone git@github.com:jaferdaltro/iaflix.git
+    ```
 
-### Code Generators
+2. Change into the project directory:
 
-Make use of the many generators for code, try `ember help generate` for more details
+    ```bash
+    cd iaflix 
+    ```
 
-### Running Tests
+3. Install dependencies:
 
-* `npm run test`
-* `npm run test:ember -- --server`
+    ```bash
+    npm install
+    ```
 
-### Linting
+### Running the App
 
-* `npm run lint`
-* `npm run lint:fix`
+1. Start the Ember development server:
 
-### Building
+    ```bash
+    ember serve
+    ```
 
-* `npm exec ember build` (development)
-* `npm run build` (production)
+2. Visit the app in your browser at `http://localhost:4200`.
 
-### Deploying
+## Features
 
-Specify what it takes to deploy your app.
+### Movie List
 
-## Further Reading / Useful Links
+- **Route:** `/movies`
+- **Description:** View a list of all movies.
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+### Movie Details
+
+- **Route:** `/movies/:id`
+- **Path Parameter:**
+  - `id`: Movie ID.
+- **Description:** View details of a specific movie.
+
+## Testing
+
+To run tests, use the following command:
+
+```bash
+ember test

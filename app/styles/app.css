@@ -1,1 +1,27 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+.card-columns {
+  column-count: 6;
+}
+
+.card {
+  height: 300px;
+}
+
+.mb-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-columns .card {
+  margin-bottom: 1.75rem;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+.text-center {
+  margin-top: 10px;
+  text-align: center;
+}
