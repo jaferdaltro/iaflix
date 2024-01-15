@@ -12,7 +12,7 @@ module('Integration | Component | movie-card', function (hooks) {
 
     await render(hbs`<MovieCard />`);
 
-    assert.dom().hasText('');
+    assert.dom().hasText('More Details');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | movie-card', function (hooks) {
       </MovieCard>
     `);
 
-    assert.dom().hasText('template block text');
+    assert.dom().hasText('More Details');
   });
 });

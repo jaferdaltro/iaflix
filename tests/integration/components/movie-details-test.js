@@ -12,7 +12,9 @@ module('Integration | Component | movie-details', function (hooks) {
 
     await render(hbs`<MovieDetails />`);
 
-    assert.dom().hasText('');
+    assert
+      .dom()
+      .hasText('Release Date Genre Runtime Parental Rating Rating Plot');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +23,8 @@ module('Integration | Component | movie-details', function (hooks) {
       </MovieDetails>
     `);
 
-    assert.dom().hasText('template block text');
+    assert
+      .dom()
+      .hasText('Release Date Genre Runtime Parental Rating Rating Plot');
   });
 });

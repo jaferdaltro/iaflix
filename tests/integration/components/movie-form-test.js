@@ -3,24 +3,32 @@ import { setupRenderingTest } from 'iaflix/tests/helpers';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | movie-new', function (hooks) {
+module('Integration | Component | movie-form', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<MovieNew />`);
+    await render(hbs`<MovieForm />`);
 
-    assert.dom().hasText('');
+    assert
+      .dom()
+      .hasText(
+        'Create Movie Title Genre Release Date Runtime(e.g., 30 min) Parental Rating Create Movie',
+      );
 
     // Template block usage:
     await render(hbs`
-      <MovieNew>
+      <MovieForm>
         template block text
-      </MovieNew>
+      </MovieForm>
     `);
 
-    assert.dom().hasText('template block text');
+    assert
+      .dom()
+      .hasText(
+        'Create Movie Title Genre Release Date Runtime(e.g., 30 min) Parental Rating Create Movie',
+      );
   });
 });

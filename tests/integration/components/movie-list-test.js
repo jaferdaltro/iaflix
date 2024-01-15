@@ -21,6 +21,6 @@ module('Integration | Component | movie-list', function (hooks) {
       </MovieList>
     `);
 
-    assert.dom().hasText('template block text');
+    assert.dom().hasText('');
   });
 });
